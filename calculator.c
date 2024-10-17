@@ -19,15 +19,24 @@ int main() {
             case '+':
                 printf("The result of %d + %d is %d\n", a, b, add(a, b));
                 break;
-            case '-':
-                printf("Will be implemented soon...\n");
-                break;
-            case '*':
-                printf("Will be implemented soon...\n");
-                break;
-            case '/':
-                printf("Will be implemented soon...\n");
-                break;
+          case '*':
+    printf("The result of %d * %d is %d\n", a, b, a * b);
+    break;
+case '/':
+    if (b != 0) {
+        printf("The result of %d / %d is %.2f\n", a, b, (float)a / b);
+    } else {
+        printf("Cannot divide by zero.\n");
+    }
+    break;
+case '-':
+    printf("The result of %d - %d is %d\n", a, b, a - b);
+    break;
+ 
+
+ 
+
+              
             default:
                 printf("Invalid operation. Please try again.\n");
         }
