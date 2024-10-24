@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 
 int add(int i, int j) {
@@ -18,6 +20,12 @@ float divide(int i, int j) {
         return 0; // Return 0 to indicate an error.
     }
     return ((float) i / j);  // Explicit type casting to float for decimal results.
+}
+int square(int i){
+    return(i*i);
+}
+int cube(int i) {
+     return(i*i*i);
 }
 
 int main() {
@@ -64,12 +72,12 @@ int main() {
             case '^':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The result of %d^2 is %d\n",a,square(a));
                 break;
             case '#':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The result of  %d#3 is %d\n",a,cube(a));
                 break;
             case 'i':
                 printf("Enter an integer: ");
